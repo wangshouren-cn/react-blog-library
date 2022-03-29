@@ -1,0 +1,50 @@
+.message {
+  position: fixed;
+  right: -10rem;
+  bottom: 40vh;
+  animation: messageAnimation 3s forwards;
+  padding: 0.5rem;
+  background-color: @color-yellow;
+  border-radius: 0.2rem;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.7);
+  max-width: 10rem;
+  text-align: center;
+  color: @color-white;
+}
+
+.message:hover {
+  cursor: pointer;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.success {
+  background-color: @color-green;
+}
+
+.error {
+  background-color: @color-red;
+}
+
+@keyframes messageAnimation {
+  0% {
+    right: -10rem;
+  }
+
+  10% {
+    right: 0;
+  }
+
+  70% {
+    right: 0;
+    opacity: 1;
+  }
+
+  100% {
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    // opacity: 0;
+  }
+}

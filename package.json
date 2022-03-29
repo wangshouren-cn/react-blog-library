@@ -1,0 +1,39 @@
+{
+  "name": "react-blog-library",
+  "version": "3.4.10",
+  "description": "A library for react blog project.",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "rollup": "^2.70.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-less": "^1.1.3",
+    "rollup-plugin-less-modules": "^0.1.11",
+    "rollup-plugin-styles": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.6.3",
+    "@types/axios": "^0.14.0",
+    "@types/react": "^17.0.43",
+    "@types/react-dom": "^17.0.14"
+  },
+  "peerDependencies": {
+    "dayjs": "^1.11.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "^6.2.2",
+    "axios": "^0.26.1"
+  }
+}
