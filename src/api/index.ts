@@ -3,7 +3,7 @@ import { isObject, isValidString, Message } from "@/index";
 
 const http = axios.create({
   timeout: 5000,
-  baseURL: "http://127.0.0.1:7001",
+  baseURL: "http://121.4.95.151:7001",
   withCredentials: true,
 });
 
