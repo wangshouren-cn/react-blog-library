@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 
 import styles from "./index.module.less";
 import {
@@ -36,6 +36,13 @@ const FunctionComponent: React.FC<LoginProps> = ({ api, onLogined }) => {
       Message.error((msgs as string[]).join("；"));
     }
   };
+
+  useEffect(() => {
+    formStore.setValues({
+      password: "513167210",
+      username:"wangshouren"
+    })
+  }, []);
 
   const onPasswordKeydown = useCallback((e: React.KeyboardEvent) => {
     if (e.key === "Enter") {
