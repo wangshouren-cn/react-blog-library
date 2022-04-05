@@ -49,7 +49,7 @@ const InputWithButton: FC<InputWithButtonProps> = ({
     (e: React.MouseEvent<HTMLButtonElement>) => {
       onButtonClick && onButtonClick(e, value);
     },
-    [value]
+    [value,onButtonClick]
   );
 
   return (
