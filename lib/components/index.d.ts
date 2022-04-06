@@ -16,3 +16,5 @@ export { default as Tip } from "./Tip";
 export * from "./Upload";
 export { default as ValidTip } from "./ValidTip";
 export { default as Login } from "./Login";
+export { default as Editor } from "./Editor";
+export { default as MdLook } from "./MdLook";

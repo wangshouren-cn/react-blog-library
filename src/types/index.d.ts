@@ -7,7 +7,7 @@ interface Column<Record> {
   field?: string;
   name?: string;
   render?: (value: any, record: Record, index: number) => ReactNode;
-  onSort?: (field:string) => any;
+  onSort?: (field: string) => any;
 }
 
 interface ListData<T> {
@@ -23,3 +23,4 @@ interface HttpResult {
   msg?: string;
   code: number;
 }
+

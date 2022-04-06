@@ -94,9 +94,6 @@ export class FormStore<T = any> implements FormStoreInterface {
     const value = this.getValue(field),
       rules = this.rulesMap.get(field) || [];
 
-    console.log("field", field);
-    console.log("rules", rules);
-
     for (const rule of rules) {
       const { required, msg, reg } = rule;
 

@@ -6,6 +6,7 @@ import styles from "rollup-plugin-styles";
 import alias from "@rollup/plugin-alias";
 import append from "./plugins/rollup-plugin-append-content";
 import path from "path";
+import json from '@rollup/plugin-json'
 export default {
   input: "./src/index.ts",
   output: {
@@ -17,7 +18,7 @@ export default {
       target: /\.less$/,
       content: `@import "${path.join(__dirname, "./src/base.less")}";`,
       where: "first-line",
-      showResult:3
+      showResult: 3
     }),
     alias({
       entries: { find: "@", replacement: "./src" },
@@ -32,6 +33,7 @@ export default {
     styles({
       autoModules: /\.module.less$/,
     }),
+    json(),
   ],
-  external: ["react","react-dom","axios", "dayjs" ,"react-router-dom"],
+  external: ["react", "react-dom", "axios", "dayjs", "react-router-dom"],
 };

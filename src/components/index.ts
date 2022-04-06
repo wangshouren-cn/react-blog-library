@@ -1,6 +1,6 @@
 export { default as Button } from "./Button";
 export { default as ButtonWithInput } from "./ButtonWithInput";
-export { default as Form, useFormStore, FormItem ,FormStore} from "./Form";
+export { default as Form, useFormStore, FormItem, FormStore } from "./Form";
 export { default as Img } from "./Img";
 export { default as Input } from "./Input";
 export { default as Loading } from "./Loading";
@@ -16,3 +16,5 @@ export { default as Tip } from "./Tip";
 export * from "./Upload";
 export { default as ValidTip } from "./ValidTip";
 export { default as Login } from "./Login";
+export { default as Editor } from "./Editor";
+export { default as MdLook } from "./MdLook";
