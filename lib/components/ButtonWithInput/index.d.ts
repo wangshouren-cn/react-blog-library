@@ -10,6 +10,7 @@ export interface InputWithButtonProps extends HTMLAttributes {
     buttonPos?: "left" | "right";
     onChange?: (value: string) => any;
     placeholder?: string;
+    autoClear?: boolean;
 }
 /**
  * @description: children是渲染到Button里的值

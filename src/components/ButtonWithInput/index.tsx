@@ -17,6 +17,9 @@ export interface InputWithButtonProps extends HTMLAttributes {
   buttonPos?: "left" | "right";
   onChange?: (value: string) => any;
   placeholder?: string;
+
+  //点击button后清除输入框内容
+  autoClear?:boolean
 }
 
 /**
@@ -34,6 +37,7 @@ const InputWithButton: FC<InputWithButtonProps> = ({
   buttonPos = "left",
   onChange,
   placeholder,
+  autoClear = true
 }) => {
   const [value, setValue] = useState("");
 
@@ -48,6 +52,7 @@ const InputWithButton: FC<InputWithButtonProps> = ({
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLButtonElement>) => {
       onButtonClick && onButtonClick(e, value);
+      autoClear && setValue("");
     },
     [value,onButtonClick]
   );
